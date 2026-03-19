@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="login-page" class="login-page">
+  <div class="login-box">
+    <h1>NETFLIX</h1>
+    <input type="text" id="username" placeholder="Username">
+    <button onclick="login()">Sign In</button>
+  </div>
+</div>
+
+
+<div id="app">
+
+  <div class="navbar">
+    <h2 class="logo">NETFLIX</h2>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search movies...">
+      <div id="search-dropdown"></div>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Unlimited Movies, Shows & More</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>My List ⭐</h2>
+    <div id="my-list" class="row-posters"></div>
+  </div>
+
+  <div id="rows"></div>
+
+</div>
+
+
+<div id="popup" class="popup">
+  <span id="close">✖</span>
+  <iframe id="video" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
